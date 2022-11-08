@@ -19,10 +19,7 @@ public class Question {
     @Id
     @GeneratedValue
     private Long id;
-    private String questionContent;
+    private String content;
 
-    @OneToMany
-    private Set<Answer> answers;
-
-
+    private Set<String> answers;
 }
